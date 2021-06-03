@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+<script>
+    let d = +prompt('Nhập số vào để bố kiểm tra có phải fibo ko ??');
+
+    function isFibonacci(number) {
+        let s = 0;
+        let v = 1;
+        let total = 0;
+
+        if (number === 0) {
+            return true;
+        }
+        for (let i = 1; total < number; i++) {
+            s = v;
+            v = total;
+            total = s + v;
+            if (number === total) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    alert(isFibonacci(c))
+
+</script>
+</body>
+</html>
