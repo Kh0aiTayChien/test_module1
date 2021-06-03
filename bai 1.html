@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1</title>
+</head>
+<body>
+<script>
+    let diemthi = [7, 6, 5, 7, 8, 9, 5, 6];
+
+    function findMax(diemthi) {
+
+        let i = 0;
+        let max = diemthi[i];
+        while (i < diemthi.length) {
+            if (max <= diemthi[i + 1]) {
+                max = diemthi[i + 1]
+            }
+            i++;
+        }
+        return max;
+    }
+
+    document.write(findMax(diemthi));
+
+</script>
+</body>
+</html>
